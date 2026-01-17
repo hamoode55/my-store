@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>المنتجات</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Navbar -->
+  <nav class="bg-blue-600 text-white p-4 flex justify-between">
+    <h1 class="text-2xl font-bold">TechStore</h1>
+    <div>
+      <a href="#hero" class="mx-2 hover:underline">الرئيسية</a>
+      <a href="#products" class="mx-2 hover:underline">المنتجات </a>
+      <a href="#contact" class="mx-2 hover:underline"> تواصل معنا</a>
+    </div>
+  </nav>
+<section id="hero" class="pt-28">
+    <div class="mx-auto max-w-6xl px-4 grid md:grid-cols-2 gap-8 items-center">
+      <div>
+        <h1 class="text-4xl md:text-5xl font-bold leading-tight">High‑Performance Laptops & PC Components</h1>
+        <p class="mt-4 text-neutral-700">
+          أجهزة موثوقة بأسعار مناسبة—اختيارات منتقاة بعناية تناسب الدراسة والعمل والـGaming.
+        </p>
+        <div class="mt-6 flex gap-3">
+          <a href="#products" class="px-5 py-2.5 rounded bg-neutral-900 text-white hover:bg-neutral-800">Explore Products</a>
+          <a href="#about" class="px-5 py-2.5 rounded border hover:bg-neutral-100">Why Us</a>
+        </div>
+      </div>
+      <div class="relative">
+        <img src="img/hp dev.jpeg" alt="Laptop showcase" class="rounded-lg shadow-lg">
+      </div>
+    </div>
+  </section>
+  <!-- Products -->
+  <main class="p-8">
+    <h2 class="text-3xl font-bold mb-6 text-center">قائمة المنتجات</h2>
+    <div id="products" class="grid grid-cols-3 gap-6">
+
+      <!-- Product Card 1 -->
+      
+      <div class="bg-white p-4 rounded shadow hover:shadow-lg transition">
+        <img src="img/hp dev.jpeg" alt="كمبيوتر HP" class="w-40 h-40 object-cover rounded mb-4">
+        <h3 class="text-xl font-bold">كمبيوتر HP</h3>
+        <p class="text-gray-700">المواصفات: معالج i5، رام 8GB،  SSD 1TB</p>
+        <p class="text-green-600 font-bold mt-2">السعر: 3.000000جنيه</p>
+        <a href="invoice.html?product=HP&price=3.000000&image=img/hp dev.jpeg" class="block mt-3 bg-green-600 text-white p-2 rounded text-center hover:bg-green-700">شراء</a>
+      </div>
+
+      <!-- Product Card 2 -->
+      <div class="bg-white p-4 rounded shadow hover:shadow-lg transition">
+  <img src="img/dell.jpeg" alt="Dell Laptop" class="w-40 h-40 object-cover rounded mb-4">
+  <h3 class="text-xl font-bold">لابتوب Dell</h3>
+  <p class="text-gray-700">المواصفات: معالج i7، رام 16GB، SSD 512GB</p>
+  <p class="text-green-600 font-bold mt-2">السعر:1.800000جنيه</p>
+  <!-- نمرر رابط الصورة مع اسم المنتج والسعر -->
+  <a href="invoice.html?product=Dell&price=1.800000&image=img/dell.jpeg"
+     class="block mt-3 bg-green-600 text-white p-2 rounded text-center hover:bg-green-700">شراء</a>
+</div>
+
+      <!-- Product Card 3 -->
+      <div class="bg-white p-4 rounded shadow hover:shadow-lg transition">
+        <img src="img/lenovo.jpeg"لابتوب Lenovo" class="w-40 h-40 object-cover rounded mb-4">
+        <h3 class="text-xl font-bold">لابتوب Lenovo</h3>
+        <p class="text-gray-700">المواصفات: معالج Ryzen 5، رام 16GB، SSD 1TB</p>
+        <p class="text-green-600 font-bold mt-2">السعر: جنيه 2.000.000</p>
+        <!-- نمرر رابط الصورة مع اسم المنتج والسعر -->
+  <a href="invoice.html?product=lenovo&price=2.000.000.000&image=img/lenovo.jpeg"
+     class="block mt-3 bg-green-600 text-white p-2 rounded text-center hover:bg-green-700">شراء</a>
+        
+      </div>
+
+    </div>
+    <!-- About -->
+  <section id="about" class="py-16 bg-neutral-100">
+    <div class="mx-auto max-w-6xl px-4 grid md:grid-cols-2 gap-8 items-center">
+      <div>
+        <h2 class="text-2xl md:text-3xl font-semibold">About TechStore </h2>
+        <p class="mt-4 text-neutral-700">
+          نختار الأجهزة بعناية ونوفر ضمانًا ودعمًا فنيًا محليًا. هدفنا تقديم قيمة حقيقية للطلاب والمهنيين في السودان.
+        </p>
+        <ul class="mt-6 space-y-2 text-neutral-700">
+          <li>• ضمان حتى 12 شهرًا.</li>
+          <li>• صيانة وقطع غيار متوفرة.</li>
+          <li>• استشارات اختيار الجهاز المناسب لاحتياجك.</li>
+        </ul>
+      </div>
+      
+    </div>
+  </section>
+    <section id="contact" class="py-16">
+    <div class="mx-auto max-w-6xl px-4">
+      <h2 class="text-2xl md:text-3xl font-semibold">Contact</h2>
+      <form class="mt-6 grid md:grid-cols-2 gap-4">
+        <input type="text" placeholder="الاسم" class="border rounded px-3 py-2">
+        <input type="email" placeholder="البريد الإلكتروني" class="border rounded px-3 py-2">
+        <input type="text" placeholder="الهاتف" class="border rounded px-3 py-2 md:col-span-2">
+        <textarea placeholder="رسالتك" rows="4" class="border rounded px-3 py-2 md:col-span-2"></textarea>
+        <button class="px-5 py-2.5 rounded bg-neutral-900 text-white hover:bg-neutral-800 md:col-span-2">Send Message</button>
+      </form>
+    </div>
+  </section>
+  </main>
+
+  <!-- Footer -->
+   
+  <footer class="bg-gray-800 text-white text-center p-4 mt-10">
+    <p>© 2026 TechStore  - جميع الحقوق محفوظة</p>
+  </footer>
+</body>
+</html>
